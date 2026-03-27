@@ -38,3 +38,16 @@ def do_day_action(player):
             player.rest()
             print("You rested! Your capacity has increased by 20.")
             action_solved = True
+
+    def race_suggestion(player):
+
+        days_till_event = rd.randint(7,100)
+            answer = input(f"There is a race taking place in {days_till_event} days time. Would you like to participate? (Y/N)")
+
+            if answer == "Y":
+                player.has_race_planned = True
+                player.days_till_next_race = days_till_event
+                print("Great. Race has been added to calendar.")
+            
+            if answer == "N":
+                print("You have rejected to participate in this race.")

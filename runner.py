@@ -9,6 +9,9 @@ class Runner:
         
         self.sprint_factor = None # TBD, higher means better at short distances, lower means better at long distances
         self.stamina = None # TBD, how much capacity he has within a run
+
+        self.has_race_planned = False
+        self.days_till_next_race = None
     
     def run(self):
 

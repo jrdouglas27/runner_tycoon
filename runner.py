@@ -24,7 +24,7 @@ class Runner:
 
     def rest(self):
 
-        self.capacity += 10
+        self.capacity += 20
         self.capacity = min(self.capacity, 100) # Cap capacity at 100
         self.fitness *= 0.995 # Decrease fitness by 0.5% each rest day
         self.fitness = max(self.fitness, 0) # Floor fitness at 0
